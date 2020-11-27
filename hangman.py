@@ -117,8 +117,8 @@ def hangman(secret_word):
     print(f'You have {warnings_num} warnings left.')
 
     while guesses_num > 0 and not is_word_guessed(secret_word, letters_guessed):
-        print('-------------\n'
-              f'you have {guesses_num} guesses left.\n'
+        print('- * 100')
+        print(f'you have {guesses_num} guesses left.\n'
               f'available letters: {get_available_letters(letters_guessed)}')
         letter = input('please guess a letter: ').lower()
 
